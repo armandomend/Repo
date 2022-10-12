@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFraime">
+
+    <fragment
+        android:id="@+id/mainFraime"
+        android:name="com.example.navigation2022.MainFraime"
+        android:label="fragment_main_fraime"
+        tools:layout="@layout/fragment_main_fraime" >
+        <action
+            android:id="@+id/action_mainFraime_to_segundoFrame"
+            app:destination="@id/segundoFrame" />
+        <action
+            android:id="@+id/action_mainFraime_to_tercerFragme2"
+            app:destination="@id/tercerFragme" />
+    </fragment>
+    <fragment
+        android:id="@+id/segundoFrame"
+        android:name="com.example.navigation2022.SegundoFrame"
+        android:label="fragment_segundo_frame"
+        tools:layout="@layout/fragment_segundo_frame" >
+        <action
+            android:id="@+id/action_segundoFrame_to_tercerFragme"
+            app:destination="@id/tercerFragme" />
+    </fragment>
+    <fragment
+        android:id="@+id/tercerFragme"
+        android:name="com.example.navigation2022.TercerFragme"
+        android:label="fragment_tercer"
+        tools:layout="@layout/fragment_tercer" />
+</navigation>
